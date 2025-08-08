@@ -10,7 +10,7 @@ jobs:
       - run: echo "The name of your branch is ${{ github.ref }} and you repository is ${{ github.repository }}"
       - name: Check out repository code
         uses: actions/checkout@v4
-      - run: echp "The ${{ github.repository }} has been cloned"
+      - run: echo "The ${{ github.repository }} has been cloned"
       - name: List files in the repository
         run: ls ${{ github.workspace }}
-      - run: echp "This job's status is ${{ job.status }}"
+      - run: echo "This job's status is ${{ job.status }}"
